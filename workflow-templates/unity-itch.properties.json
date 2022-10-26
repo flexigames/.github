@@ -1,0 +1,12 @@
+{
+    "name": "Unity to Itch.io",
+    "description": "Workflow to build a Unity project and publish to Itch.io",
+    "categories": [
+        "C#",
+        "ShaderLab",
+        "Unity3D Asset"
+    ],
+    "filePatterns": [
+        ".*\\.prefab$"
+    ]
+}
