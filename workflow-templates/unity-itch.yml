@@ -4,6 +4,7 @@ on: [push, pull_request]
 
 env:
   ITCH_USERNAME: lexenson
+  ITCH_GAME_ID: <<FILL IN GAME HERE>>
 
 concurrency:
   group: ${{ github.ref }}
@@ -50,14 +51,6 @@ jobs:
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
         with:
           targetPlatform: WebGL
-
-      # - name: Change Pixel Ratio
-      #   uses: jacobtomlinson/gha-find-replace@v2
-      #   with:
-      #     find: "// devicePixelRatio"
-      #     replace: "devicePixelRatio"
-      #     include: "build/**/index.html"
-      #     regex: false
 
       # Output
       - name: Upload Artifact
