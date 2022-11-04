@@ -1,6 +1,8 @@
 name: Build Unity and Publish to Itch.io
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [ $default-branch ]
 
 env:
   ITCH_USERNAME: lexenson
