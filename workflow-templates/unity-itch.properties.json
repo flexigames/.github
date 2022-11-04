@@ -1,6 +1,7 @@
 {
     "name": "Unity to Itch.io",
     "description": "Workflow to build a Unity project and publish to Itch.io",
+    "iconName": "itchunity",
     "categories": [
         "Deployment",
         "C#",
